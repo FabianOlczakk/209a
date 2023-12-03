@@ -103,7 +103,7 @@ for i in sorted_data:
 
 # Draw the graph with node labels
 pos = nx.spring_layout(G)
-nx.draw(G, pos, with_labels=True, arrows=True)
+nx.draw(G, pos, with_labels=True, arrows=True, node_size=1500)  # adjust node_size as needed
 edge_labels = nx.get_edge_attributes(G, 'label')
 
 # Draw edge labels for all edges except self-loops
